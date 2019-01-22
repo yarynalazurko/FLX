@@ -1,0 +1,161 @@
+.flex-2-col {
+	display: flex;
+}
+
+/*Task 1*/
+
+@media print {
+	.tm-sidebar,
+	section:nth-child(3),
+	section:nth-child(4),
+	section:nth-child(5),
+	section:nth-child(6),
+	section::before,
+	#about {
+		display: none;
+	}
+	.tm-banner {
+		padding: 0px !important;
+		border: 0 !important;
+	}
+	.flex-item img {
+		padding-top: 130px;
+		width: 250px;
+	}
+	.tm-main-content {
+		padding: 0 80px 0 80px;
+	}
+	.tm-content-header {
+		width: 95%;
+	}
+	.tm-content-box,
+	.tm-content-header {
+		margin-bottom: 0;
+	}
+	.container {
+		margin-top: 150px;
+	}
+}
+
+/*Task 2*/
+
+.box-bg:hover {
+	background-color: lightskyblue;
+}
+
+.tm-box-bg-title:hover {
+	color: white;
+}
+
+/*Task 3*/
+
+p:first-letter {
+	color: lightskyblue;
+	font-size: 30px;
+}
+
+/*Task 4*/
+
+.tm-content-box,
+.tm-sidebar {
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5)
+}
+
+.tm-banner {
+	padding: 0px !important;
+	border: 30px solid #f5f5f5;
+}
+
+/*Task 5*/
+
+section::before {
+	content: "";
+	border-style: solid;
+	border-width: 25px 300px 0 0;
+	border-color: lightskyblue transparent transparent transparent;
+}
+
+/*Task 6*/
+
+#ideas .tm-section-title {
+	letter-spacing: 5px;
+	color: gainsboro;
+}
+
+/*Task 7*/
+
+h2+p {
+	font-style: italic;
+}
+
+/*Task 8*/
+
+.tm-section-description {
+	text-indent: 25px;
+	line-height: 30px;
+}
+
+/*Task 9*/
+
+.heading a {
+	color: black;
+}
+
+.heading a:visited {
+	text-decoration: underline;
+}
+
+.heading a:hover {
+	text-decoration: underline double;
+	color: lightskyblue;
+}
+
+.heading a.text:after {
+	content: "New";
+	color: red;
+	vertical-align: super;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+/*Task 10*/
+
+.blocks li {
+	padding: 10px;
+}
+
+.blocks li:nth-child(even) {
+	background-color: #f5f5f5;
+}
+
+.blocks p:first-letter {
+	color: black;
+}
+
+/*Task 11*/
+
+.submit-btn {
+	background: white;
+	float: right;
+	border: 1px solid lightskyblue;
+	border-radius: 0;
+	padding: 10px 50px;
+	color: lightskyblue;
+}
+
+.submit-btn:hover {
+	background: lightskyblue;
+	border-color: lightskyblue;
+	color: white;
+}
+
+.mandatory-field:after {
+	content: "*";
+	color: red;
+}
+
+/*Task 12*/
+
+.tm-sidebar li:hover {
+	background-color: #f5f5f5;
+}
