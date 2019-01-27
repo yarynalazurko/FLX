@@ -1,0 +1,181 @@
+// Write your styles here
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font;
+    font-size: $font-size;
+    text-decoration: none;
+    line-height: 1.5;
+}
+@mixin my-btn($bg-btn) {
+	background: $bg-btn;
+	border: 1px solid $bg-btn;
+	width: 200px;
+	height: 35px;
+	color: white;
+	text-align: center;	
+	text-transform: uppercase;
+	margin-top: 15px;
+	&:hover {
+		border: 2px solid $header-color;
+	}
+}
+@mixin flex($flex-direction, $justify-content, $align-items) {
+	display: flex;
+	flex-direction: $flex-direction;
+	justify-content: $justify-content;
+	align-items: $align-items;
+}
+.main-wrapper {
+	margin: 0 auto;
+	width: 1280px;
+	background: $content-background;
+	@include flex(column, center, center);
+}
+.logo img {
+	width: 200px;
+}
+header {
+	width: 1280px;
+	background: $bg-img no-repeat center center; 
+	background-size: cover;
+	color: $header-color;
+	height: 700px;
+	section {
+		@include flex(column, center, center);
+	}
+	.btn {
+		margin-top: 10px;
+		padding: 15px 0 35px 0;
+	}
+	h1 {
+		color: $header-color;
+	}
+}
+.top-wrapper {
+	@include flex(row, space-between, flex-start);
+	margin-bottom: 150px;
+}
+nav {
+	width: 672px;
+	height: 50px;
+	@include flex(row, space-between, center);	
+	:nth-child(2){
+		border-left: 1px solid $nav-border-color;
+		border-right: 1px solid $nav-border-color;
+	}
+	a {
+		width: 220px;
+		color: $header-color;
+		text-align: center;
+		&:hover {
+			color: $bg-btn;
+		}
+	}
+}
+.btn {
+	@include my-btn($bg-btn);
+	float: right;
+}
+main {
+	width: 960px;
+	height: 2800px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: space-around;
+}
+.post-list {
+	height: 1700px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+article {
+	background-color: $bg-color-article;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 10px;
+	height: 270px;
+	width: 960px;
+	box-sizing: border-box;
+	img {
+		width: 250px;
+	}
+}
+.post {
+	width: 670px;
+	p {
+		color: $post-color-p	;
+		margin: 0;
+	}
+}
+.post-description {
+	color: $post-description-color;
+	border-bottom: 1px solid $post-color-p;
+	padding: 10px 0 10px 0;
+}
+h1, h3, h4, a {
+	margin: 0;
+	text-transform: uppercase;
+}
+h3 {
+	color: $post-color-h3;
+}
+h1 {
+	color: $color-h1;
+}
+h4 {
+	color: $color-h1;
+}
+.about {
+	color: $about-color;
+	div {
+		@include flex(column, center, flex-end);
+		p {
+			padding-bottom: 20px;
+		}
+	}
+	img {
+		width: 960px;
+	}
+}
+.contact-form {
+	width: 960px;
+	@include flex(column, center, flex-end);
+}
+.user-data {
+	@include flex(row, space-between, center);
+	flex-wrap: wrap;
+	input {
+		width: 470px;
+		height: 30px;
+	}
+}
+label {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	margin-top: 20px;
+}
+textarea {
+	width: 960px;
+	height: 150px; 
+}
+form {
+	color: $form-color;
+	height: 360px;
+	@include flex(column, space-around, flex-end);
+}
+.toolbar input {
+	border: 1px solid $border-color-input;
+	width: 200px;
+	padding: 10px;
+}
+footer {
+	padding-left:10px;
+	width: 1280px;
+}
