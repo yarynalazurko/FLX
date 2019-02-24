@@ -25,10 +25,6 @@ header {
     display: none;
 }
 
-main {
-    width: 100%;
-}
-
 .add-new-action-box {
     display: flex;
     justify-content: space-between;
