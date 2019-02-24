@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Homework 11 - TODO Cat List</title>
+    <link rel="stylesheet" href="./assets/material-icons/material-icons.css">
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>TODO Cat List</h1>
+            <p id="notification">Maximum item per list are created</p>
+        </header>
+        <main>
+            <div class="add-new-action-box">
+                <input type="text" name="add-action" placeholder="Add New Action" id="addActionInput" class="add-new-action-input">
+                <button class="material-icons" id="addActionBtn">add_box</button>
+            </div>
+            <ul id="toDoList" class="to-do-list"></ul>
+        </main>
+        <footer>
+            <img src="./assets/img/cat.png" class="footer-img" alt="cat-paw">
+        </footer>
+    </div>
+    <script src="./src/app.js"></script>
+</body>
+
+</html>
