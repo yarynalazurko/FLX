@@ -26,7 +26,7 @@ function assign(obj) {
 function Bot(obj) {
     this.name = obj.name;
     this.defaultSpeed = obj.speed;
-    this.speed = obj.speed;
+    this.speed = this.defaultSpeed;
     this.x = obj.x;
     this.y = obj.y;
     this.nameOfClass = 'Bot';
