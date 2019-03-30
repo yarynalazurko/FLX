@@ -1,11 +1,11 @@
 function* factorial(n) {
-    var result = 1;
-    for (var i = 1; i <= n; i++) {
+    let result = 1;
+    for (let i = 1; i <= n; i++) {
         result *= i;
         yield result;
     }
 }
 
-for (var n of factorial(5)) {
+for (let n of factorial(5)) {
     console.log(n)
 }

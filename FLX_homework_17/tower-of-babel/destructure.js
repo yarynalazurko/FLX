@@ -1,4 +1,4 @@
-var json = {
+let json = {
     'name': {
         'first': 'Yosuke',
         'family': process.argv[2]
@@ -10,7 +10,7 @@ var json = {
     }
 };
 
-var { name: { family: familyName }, birth: { day: birthDay } } = json;
+let { name: { family: familyName }, birth: { day: birthDay } } = json;
 
 console.log(familyName);
 console.log(birthDay);

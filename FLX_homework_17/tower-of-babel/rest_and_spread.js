@@ -1,5 +1,5 @@
-var rawArgs = process.argv.slice(2);
-var args = [];
+let rawArgs = process.argv.slice(2);
+let args = [];
 
 rawArgs.forEach(val => {
     let commaSep = val.split(',');
@@ -8,7 +8,7 @@ rawArgs.forEach(val => {
     });
 });
 
-var avg = function (...args) {
+let avg = function (...args) {
     return args.reduce((a, b) => a + b) / args.length;
 }
 
