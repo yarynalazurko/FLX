@@ -24,7 +24,6 @@ window.addEventListener('mouseup', function (event) {
     }
 });
 
-
 function showUsers(data) {
     data.forEach(function (data) {
         let user = list_of_users.appendChild(document.createElement('div'));
@@ -93,7 +92,6 @@ function showUsers(data) {
 
 let edit = true;
 function editUser() {
-
     let list = this.parentNode.parentNode;
     let edit_input = list.querySelectorAll('input');
     let edit_text = list.querySelectorAll('p');
@@ -214,7 +212,7 @@ function getImg(avatar) {
                     avatar.src = catUrl;
                 } else {
                     getImg(avatar);
-                } 
+                }
             })
             .catch(error => {
                 console.log(`ERROR: ${error.stack}`)
