@@ -1,0 +1,120 @@
+#list-of-users {
+    margin: 0 auto;
+    width: 60vw;
+}
+#list-of-posts {
+    margin: 0 auto;
+    width: 80vw;
+    height: 40vw;
+    overflow: scroll;
+    background: #e7e7e7;
+
+    position: fixed;
+    top: calc(20% - 50px);
+    left: calc(15% - 50px);
+
+    display: none;
+}
+.user {
+    display: flex;  
+    margin-bottom: 1vw;
+    border: 1px solid #e7e7e7;
+    padding: 2vw;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.user-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 80vw;
+    margin-left: 1vw;
+}
+.user-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.user-edit-button,
+.user-delete-button {
+    height: 5vw;
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+}
+.user-edit-button:hover {
+    background-color: #e7e7e7;
+}
+.user-delete-button:hover {
+    background-color: #e7e7e7;
+}
+.user-name:hover {
+    cursor: pointer;
+}
+input.edit-input {
+    display: none;
+    width: 20vw;
+}
+p {
+    margin: 0;
+    width: 20vw;
+}
+label {
+    width: 12vw;
+    font-style: italic;
+}
+img {
+    width: 12vw;
+    height: 12vw;
+}
+.post-box {
+    width: 80vw;
+    height: 20vw;
+}
+
+.post-body {
+    text-align: justify;
+}
+
+
+/* disabled background */
+#disabled-bg{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    background: #333;
+    opacity: 0.7;
+    display: none;
+  }
+
+
+/* loader */
+#loader {
+    position: fixed;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid #333;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    display: none;
+    z-index: 999;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  
