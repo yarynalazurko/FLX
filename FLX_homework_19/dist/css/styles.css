@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  width: 100%;
+}
+header .logo-img {
+  width: 100%;
+}
+header .logo-text {
+  text-align: center;
+  background: #EAFBFF;
+  border: 2px solid #3E404F;
+  font-weight: lighter;
+  padding: 5px;
+  margin: 0;
+}
+main {
+  width: 100%;
+}
+main #rules {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+main #rules h4 {
+  margin: 0;
+}
+main #game {
+  width: 100%;
+  flex-wrap: wrap;
+  display: none;
+}
+main #game .human-choice {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 42%;
+}
+main #game .human-choice .human-choice-img {
+  width: 50%;
+  height: 50%;
+  margin-bottom: 3px;
+}
+main #game .human-choice .human-choice-img:hover {
+  cursor: pointer;
+}
+main #game .result {
+  width: 16%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main #game .result #total-text {
+  text-align: center;
+}
+main #game .computer-choice {
+  width: 42%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #game .computer-choice .computer-choice-img {
+  width: 80%;
+  height: 80%;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #EAFBFF;
+  border: 2px solid #3E404F;
+  color: #3E404F;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #FF5767;
+  border: 2px solid #FEBE11;
+  color: #FEBE11;
+}
+
+/*# sourceMappingURL=maps/styles.css.map */
